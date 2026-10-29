@@ -5,8 +5,8 @@
     <test name="Smoke">
         <classes>
           
-            <class name = "TestNGFrameWork.LoginTest"/>
-     		<class name = "TestNGFrameWork.HomeTest"/>
+            <class name = "com.testng.tests.LoginTest"/>
+     		<class name = "com.testng.tests.HomeTest"/>
         </classes>
     </test>
 

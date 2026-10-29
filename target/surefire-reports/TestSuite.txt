@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 15.90 s <<< FAILURE! -- in TestSuite
-com.testng.tests.LoginTest.teardown -- Time elapsed: 0.666 s <<< FAILURE!
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 6, Time elapsed: 17.87 s <<< FAILURE! -- in TestSuite
+com.testng.tests.LoginTest.teardown -- Time elapsed: 1.530 s <<< FAILURE!
 org.openqa.selenium.UnhandledAlertException: 
-unexpected alert open: {Alert text : Error : The password is invalid or the user does not have a password.}
-  (Session info: chrome=156.0.8078.48): Error : The password is invalid or the user does not have a password.
+unexpected alert open: {Alert text : Error : There is no user record corresponding to this identifier. The user may have been deleted.}
+  (Session info: chrome=156.0.8078.73): Error : There is no user record corresponding to this identifier. The user may have been deleted.
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LEANOVA-PINEFRO', ip: '192.168.1.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.4'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.48, chrome: {chromedriverVersion: 156.0.8078.47 (1d17a2e2ee14..., userDataDir: C:\Users\sajja\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53844}, goog:processID: 14612, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f83710a721d15d0fe504a0358c8e880
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.73, chrome: {chromedriverVersion: 156.0.8078.73 (2f9a11097447..., userDataDir: C:\Users\sajja\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64355}, goog:processID: 8376, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 667b5a07057f4be743a5b3d3e3315731
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
@@ -18,8 +18,8 @@ Session ID: 8f83710a721d15d0fe504a0358c8e880
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-	at com.testng.base.BaseTest.closebrowser(BaseTest.java:34)
-	at com.testng.tests.LoginTest.teardown(LoginTest.java:47)
+	at com.testng.base.BaseTest.closebrowser(BaseTest.java:41)
+	at com.testng.tests.LoginTest.teardown(LoginTest.java:74)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -48,10 +48,9 @@ Session ID: 8f83710a721d15d0fe504a0358c8e880
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 	at org.testng.TestNG.runSuites(TestNG.java:1112)
 	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
