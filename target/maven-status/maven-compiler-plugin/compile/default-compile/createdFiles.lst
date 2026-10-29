@@ -1,0 +1,4 @@
+com\testng\base\BaseTest.class
+com\testng\utilities\PropertiesFile.class
+com\testng\utilities\ScreenshotUtility.class
+com\testng\base\BasePage.class

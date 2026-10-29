@@ -1,0 +1,4 @@
+com\testng\pages\HomePage.class
+com\testng\tests\LoginTest.class
+com\testng\pages\LoginPage.class
+com\testng\tests\HomeTest.class
