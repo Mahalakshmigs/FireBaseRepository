@@ -1,13 +1,10 @@
 
 
-<suite name="My Test Suite">
-
-    <test name="Smoke">
-        <classes>
-          
-            <class name = "com.testng.tests.LoginTest"/>
-     		<class name = "com.testng.tests.HomeTest"/>
-        </classes>
-    </test>
-
-</suite>
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.testng.tests.LoginTest"/>
+      <class name="com.testng.tests.HomeTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

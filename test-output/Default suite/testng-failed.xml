@@ -5,9 +5,9 @@
     <classes>
       <class name="com.testng.tests.LoginTest">
         <methods>
-          <include name="loginwithNoPassword"/>
           <include name="teardown"/>
           <include name="launch"/>
+          <include name="loginwithInvalidCredentials"/>
         </methods>
       </class> <!-- com.testng.tests.LoginTest -->
     </classes>

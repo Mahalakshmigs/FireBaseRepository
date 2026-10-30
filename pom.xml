@@ -29,22 +29,22 @@
     <version>7.10.2</version>
 </dependency>
   </dependencies>
-  <build>
-<plugins>
-<plugin>
-<groupId>org.apache.maven.plugins</groupId>
-<artifactId>maven-surefire-plugin</artifactId>
-<version>3.5.2</version>
-<configuration>
-<suiteXmlFiles>
-<suiteXmlFile>TestNG.xml</suiteXmlFile>
-</suiteXmlFiles>
-</configuration>
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>3.5.2</version>
+			<configuration>
+			<suiteXmlFiles>
+			<suiteXmlFile>TestNG.xml</suiteXmlFile>
+			</suiteXmlFiles>
+			</configuration>
+	
+		</plugin>
 
-</plugin>
 
-
-</plugins>
+	</plugins>
 
 </build>
 </project>

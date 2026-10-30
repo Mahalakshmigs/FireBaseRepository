@@ -26,7 +26,7 @@ public class BaseTest {
 			try {
 				applicationurl = PropertiesFile.getProperty("url");
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
+			
 				e.printStackTrace();
 			}
 		//	String applicationurl = properties.getProperty("url");

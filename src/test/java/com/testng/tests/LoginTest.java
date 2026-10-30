@@ -47,6 +47,9 @@ public class LoginTest extends BaseTest {
 		//loginpage.enterintoPassword("admin123");
 		loginpage.enterintoUsername(PropertiesFile.getProperty("invalidusername"));
 		loginpage.enterintoPassword(PropertiesFile.getProperty("invalidpassword"));
+	//	loginpage.clickLogin();
+	//	Alert alert = driver.switchTo().alert();
+	//	alert.accept();
 		methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
 		screenshot.takescreenshot(driver, methodName);
 		loginpage.clickLogin();
